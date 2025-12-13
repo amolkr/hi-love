@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Delius+Swash+Caps&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+    width: 80vw;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(249, 190, 190);
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 30vh;
+    width: 75vw;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-image: url(./images/back2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image img {
+    width: 20vh;
+}
+
+.card h1 {
+    font-family: "Pacifico", cursive;
+}
+
+.card p {
+    font-family: "Delius", cursive;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn {
+    width: 60vw;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 15px 20px;
+    background-color: rgb(240, 137, 137);
+    font-family: "Delius Swash Caps", cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    .card {
+        width: 40vw;
+    }
+
+    .image {
+        width: 35vw;
+    }
+
+    .btn {
+        width: 35vw;
+    }
+}
